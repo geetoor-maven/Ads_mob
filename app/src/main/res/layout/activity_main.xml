@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3890356073486760/6102636745">
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_below="@id/adView"
+        ads:adUnitId="ca-app-pub-3890356073486760/4690865612"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adView1"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3890356073486760/6102636745">
+    </com.google.android.gms.ads.AdView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_below="@id/adView2"
+        ads:adUnitId="ca-app-pub-3890356073486760/4690865612"/>
+
+    <Button
+        android:id="@+id/button"
+        android:text="Click Me"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
